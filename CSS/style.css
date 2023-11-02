@@ -102,6 +102,29 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  overflow: hidden;
+}
+
+.btn {
+  padding: 10px 20px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.container-main-pagina1,
+.container-main-pagina2 {
+    height: 100%;
+    width: 200%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s; 
 }
 
 .container-main-divisao1 {
