@@ -106,10 +106,25 @@
 }
 
 .btn {
-  padding: 10px 20px;
   position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #e5eee5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
+.btn:hover {
+  background-color: #dfd3d3;
+}
+
+.btn img {
+  width: 60%;
+  height: 60%;
+}
 .left {
   float: left;
   left: 2%;
@@ -118,6 +133,14 @@
 .right {
   float: right;
   right: 2%;
+}
+
+#page1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-main-pagina1 {
@@ -211,7 +234,6 @@
   justify-content: center;
   transition: transform 0.5s;
 }
-
 
 /* .container-main-pagina2-divisao1 {
   height: 75%;
