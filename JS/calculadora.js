@@ -4,4 +4,8 @@ const CalcularImc = () => {
   const idade = parseInt(document.getElementById("idade").value);
   const genero = document.getElementById("genero").value;
   const imc = peso / (altura * altura);
+
+  let figura = "";
+  let mensagem = "";
+  let percentualGordura = 0;
 };
