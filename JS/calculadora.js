@@ -9,3 +9,7 @@ const CalcularImc = () => {
   let mensagem = "";
   let percentualGordura = 0;
 };
+
+const RecomandacoesImc = () => {
+
+}
