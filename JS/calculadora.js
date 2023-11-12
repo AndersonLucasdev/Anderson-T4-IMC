@@ -8,8 +8,31 @@ const CalcularImc = () => {
   let figura = "";
   let mensagem = "";
   let percentualGordura = 0;
+
+  RecomandacoesImc(mensagem, figura, idade, genero, imc)
 };
 
-const RecomandacoesImc = () => {
+const RecomandacoesImc = (mensagem, figura, idade, genero, imc) => {
+  if (idade < 18) {
+    // IMC para crianças
+    if (genero === 'homem') {
 
+    } else if (genero === 'mulher') {
+
+    }
+  } else if (idade >= 18 && adulto < 65) {
+    // IMC para adulto
+    if (genero === 'homem') {
+
+    } else if (genero === 'mulher') {
+      
+    }
+  } else {
+    // IMC para idoso
+    if (genero === 'homem') {
+
+    } else if (genero === 'mulher') {
+      
+    }
+  }
 }
