@@ -8,7 +8,9 @@ const CalcularImc = () => {
   
   let percentualGordura = 0;
 
-  RecomandacoesImc(idade, genero, imc)
+  figura, imagem = RecomandacoesImc(idade, genero, imc)
+
+  
 };
 
 const RecomandacoesImc = (idade, genero, imc) => {
