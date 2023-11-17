@@ -141,6 +141,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.imagem-principal-page1 {
+  height: 80%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 27%;
+}
+
+.imagem-principal-page1 img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .container-main-pagina1 {
@@ -163,7 +182,7 @@
 
 .container-main-pagina1-divisao1-titulo1 {
   height: 50%;
-  width: 23%;
+  width: 25%;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -174,32 +193,40 @@
   font-weight: 800;
   letter-spacing: -0.01em;
   color: #3e473d;
-  font-size: 3.85rem;
+  font-size: 4.15rem;
   line-height: 3.625rem;
   padding-top: 4px;
   padding-bottom: 1px;
   text-align: center;
 }
 
-.container-main-pagina1-divisao1-espacamento {
+.container-main-pagina1-divisao1-componente {
   height: 97%;
-  width: 50%;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.container-main-pagina1-divisao1-componente-espacamento {
+  height: 100%;
+  width: 75%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.container-main-pagina1-divisao1-espacamento-texto {
-  height: 30%;
-  width: 30%;
+.container-main-pagina1-divisao1-componente-espacamento-texto {
+  height: 45%;
+  width: 45%;
   display: flex;
-  align-items: end;
-  justify-content: center;
-  margin-bottom: 3%;
+  align-items: center;
+  justify-content: right;
+  margin-bottom: 5%;
 }
 
-.container-main-pagina1-divisao1-espacamento-texto h3 {
+.container-main-pagina1-divisao1-componente-espacamento-texto h3 {
   font-size: 0.95rem;
   line-height: 1.1rem;
   /* text-transform: uppercase; */
@@ -210,15 +237,15 @@
   color: #878a8f;
 }
 
-.container-main-pagina1-divisao1-espacamento-titulo2 {
-  height: 30%;
-  width: 45%;
+.container-main-pagina1-divisao1-componente-espacamento-titulo2 {
+  height: 35%;
+  width: 60%;
   display: flex;
-  align-items: end;
-  justify-content: center;
+  align-items: center;
+  justify-content: right;
 }
 
-.container-main-pagina1-divisao1-espacamento-titulo2 h1{
+.container-main-pagina1-divisao1-componente-espacamento-titulo2 h1{
   font-family: "Helvetica Now Display DW", sans-serif;
   font-weight: 800;
   letter-spacing: -0.01em;
