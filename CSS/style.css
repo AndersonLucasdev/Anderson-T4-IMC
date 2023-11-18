@@ -186,6 +186,29 @@
   z-index: 1;
 }
 
+.bolinha01 {
+  height: 15%;
+  width: 7%;
+  background-color: #baf796;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.bolinha02 {
+  height: 15%;
+  width: 7%;
+  background-color: #baf796;
+  position: absolute;
+  bottom: 7%;
+  right: 30%;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+
 .imagem-principal-page1 img{
   height: 100%;
   width: 100%;
@@ -273,6 +296,7 @@
   display: flex;
   align-items: center;
   justify-content: right;
+  z-index: 2;
 }
 
 .container-main-pagina1-divisao1-componente-espacamento-titulo2 h1{
