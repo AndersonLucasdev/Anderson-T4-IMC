@@ -380,17 +380,8 @@
   position: relative;
 }
 
-.container-main-pagina2 {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.5s;
-}
-
 .imagem-principal-page02 {
-  height: 80%;
+  height: 65%;
   width: 40%;
   display: flex;
   align-items: center;
@@ -398,13 +389,110 @@
   position: absolute;
   z-index: -1;
   bottom: 0;
-  left: 27%;
+  left: 29%;
 }
 
 .imagem-principal-page02 img {
   height: 100%;
   width: 100%;
   object-fit: contain;
+}
+
+.container-main-pagina2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: transform 0.5s;
+}
+
+.container-main-pagina2-divisao1 {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-main-pagina2-divisao1-titulo {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-main-pagina2-divisao1-paragrafo {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-main-pagina2-divisao2 {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-main-pagina2-divisao2-linha1 {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-main-pagina2-divisao2-linha1-lista1 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-main-pagina2-divisao2-linha1-lista2 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-main-pagina2-divisao2-linha2 {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-main-pagina2-divisao2-linha2-lista1 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-main-pagina2-divisao2-linha2-lista2 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .container-main-pagina3 {
