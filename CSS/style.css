@@ -516,12 +516,45 @@
 }
 
 .container-main-divisao1 {
-  height: 30%;
+  height: 35%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.container-main-divisao1-titulo {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-main-divisao1-titulo-separacao span {
+  position: relative;
+  padding: 0 10px; 
+  background-color: #ffffff;
+}
+
+.contorno-B {
+  content: "";
+  position: absolute;
+  top: 23%;
+  left: 45%;
+  width: 10%;
+  height: 2px;
+  background-color: #5aaf14;
+}
+
+.container-main-divisao1-paragrafo {
+  height: 45%;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .container-main-divisao2 {
@@ -531,6 +564,7 @@
   align-items: center;
   justify-content: center;
 }
+
 
 .container-main-divisao3 {
   height: 40%;
