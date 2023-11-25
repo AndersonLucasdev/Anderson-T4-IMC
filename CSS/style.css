@@ -490,7 +490,7 @@
   font-weight: 800;
   letter-spacing: -0.01em;
   color: #0f141e;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   padding-top: 1px;
   padding-bottom: 4px;
   text-align: center;
@@ -739,7 +739,6 @@
   justify-content: center;
   position: relative;
 }
-
 .container-main-pagina3 {
   height: 100%;
   width: 100%;
@@ -748,7 +747,49 @@
   justify-content: center;
   flex-direction: column;
   transition: transform 0.5s;
+  position: relative;
 }
+
+.traco {
+  position: absolute; 
+  width: 66%;
+  height: 1px;
+  top: 45%;
+  left: 18%; 
+  background-color: #0f141e;
+}
+
+.um, .dois, .tres {
+  position: absolute;
+  width: 2%;
+  height: 4%;
+  border-radius: 50%;
+  background-color: #0f141e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  color: #5aaf14;
+}
+
+.um:hover, .dois:hover, .tres:hover {
+  background-color: #525863;
+}
+.um {
+  top: 43%;
+  left: 18%;
+} 
+
+.dois {
+  top: 43%;
+  left: 50%;
+}
+
+.tres {
+  top: 43%;
+  right: 15%;
+}
+
 
 .container-main-divisao1 {
   height: 35%;
@@ -765,6 +806,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.container-main-divisao1-titulo h1{
+  font-family: "Helvetica Now Display DW", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #0f141e;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  padding-top: 1px;
+  padding-bottom: 4px;
+  text-align: left;
 }
 
 .container-main-divisao1-titulo-separacao span {
@@ -791,6 +844,18 @@
   justify-content: center;
   text-align: center;
 }
+
+.container-main-divisao1-paragrafo {
+  font-family: "Helvetica Now Display DW", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #0f141e;
+  font-size: 0.9rem;
+  padding-top: 1px;
+  padding-bottom: 4px;
+  text-align: center;
+}
+
 
 .container-main-divisao2 {
   height: 10%;
@@ -822,6 +887,41 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #c4c4cc;
+  flex-direction: column;
+  background-color: #d7dae0;
   margin: 0 2% 0 2%;
+}
+
+.titulo {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo h3 {
+  font-family: "Helvetica Now Display DW", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #0f141e;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.descricao {
+  height: 60%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.descricao p {
+  font-family: "Helvetica Now Display DW", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #0f141e;
+  font-size: 0.8rem;
+  text-align: justify;
 }
