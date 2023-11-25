@@ -107,20 +107,84 @@
 }
 
 .container-main-conteudo {
-  height: 89vh;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  
-}
-
-.container-main-sobre {
   height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+.container-main-conteudo-titulo {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.container-main-conteudo-bloco {
+  height: 55%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-main-conteudo-bloco-texto {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-left: 2%;
+}
+
+.container-main-conteudo-bloco-texto p {
+  text-align: justify;
+}
+
+.container-main-conteudo-bloco-imagem {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-main-conteudo-bloco-imagem img {
+  height: 90%;
+  width: 90%;
+  object-fit: contain; 
+}
+
+.container-main-conteudo-formula {
+  height: 20%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-main-conteudo-formula-imagem {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-main-conteudo-formula-imagem img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain; 
+}
+
+.container-main-conteudo-formula-descricao {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-main-calculadora {
@@ -129,4 +193,112 @@
   align-items: center;
   justify-content: center;
   position: relative;
+}
+.container-main-calculadora-titulo {
+  width: 50%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-main-calculadora-principal {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.container-main-calculadora-principal-espacamento {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #c4c4cc;
+}
+
+.container-main-calculadora-principal-espacamento-idade {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-main-calculadora-principal-espacamento-idade-selecione {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-main-calculadora-principal-espacamento-idade-escolha {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container-main-calculadora-principal-espacamento-sexo {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-main-calculadora-principal-espacamento-sexo-selecione {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-main-calculadora-principal-espacamento-sexo-escolha {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container-main-calculadora-principal-espacamento-peso {
+  height: 20%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-main-calculadora-principal-espacamento-peso-escolha {
+  height: 40%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-main-calculadora-principal-espacamento-altura  {
+  height: 20%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-main-calculadora-principal-espacamento-altura-escolha {
+  height: 40%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
