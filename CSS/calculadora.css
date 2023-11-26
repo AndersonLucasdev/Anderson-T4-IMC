@@ -119,7 +119,7 @@
   height: 15%;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 .container-main-conteudo-titulo h1 {
@@ -174,7 +174,7 @@
 .container-main-conteudo-bloco-imagem img {
   height: 90%;
   width: 90%;
-  object-fit: contain; 
+  object-fit: contain;
 }
 
 .container-main-conteudo-formula {
@@ -196,7 +196,7 @@
 .container-main-conteudo-formula-imagem img {
   height: 100%;
   width: 100%;
-  object-fit: contain; 
+  object-fit: contain;
 }
 
 .container-main-conteudo-formula-descricao {
@@ -254,41 +254,12 @@
   justify-content: center;
 }
 
-.container-container-main-calculadora-bloco {
-  width: 30%;
-  height: 50%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-}
-
-.container-main-calculadora-paragrafo {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-}
-
-.container-main-calculadora-paragrafo p {
-  font-family: "Helvetica Now Display DW", sans-serif;
-  font-weight: 800;
-  letter-spacing: -0.01em;
-  color: #0f141e;
-  font-size: 0.9rem;
-  padding-top: 1px;
-  padding-bottom: 4px;
-  text-align: center;
-  text-align: justify;
-}
-
 .container-main-calculadora-principal {
   width: 50%;
   height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .container-main-calculadora-principal-espacamento {
   width: 90%;
@@ -297,7 +268,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #d7dae0;
+  /* background-color: #d7dae0; */
+  background-color: #91f0f0;
 }
 
 .container-main-calculadora-principal-espacamento-idade {
@@ -359,6 +331,16 @@
   flex-direction: column;
 }
 
+.container-main-calculadora-principal-espacamento-peso input {
+  width: 80%;
+  height: 25%;
+  border: none;
+  border-radius: 15px;
+  padding-left: 7px;
+  outline: none;
+  background-color: #d9d9d9;
+}
+
 .container-main-calculadora-principal-espacamento-peso-escolha {
   height: 40%;
   width: 50%;
@@ -367,13 +349,23 @@
   justify-content: center;
 }
 
-.container-main-calculadora-principal-espacamento-altura  {
+.container-main-calculadora-principal-espacamento-altura {
   height: 20%;
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.container-main-calculadora-principal-espacamento-altura input {
+  width: 80%;
+  height: 25%;
+  border: none;
+  border-radius: 15px;
+  padding-left: 7px;
+  outline: none;
+  background-color: #d9d9d9;
 }
 
 .container-main-calculadora-principal-espacamento-altura-escolha {
@@ -393,9 +385,59 @@
 }
 
 .container-main-calculadora-principal-espacamento-btn button {
-  width: 30%;
-  height: 100%;
+  width: 25%;
+  height: 70%;
+  border: none;
+  background-color: rgb(177, 172, 172);
+  color: rgb(18, 207, 18);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  font-size: 1.1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+  outline: none;
+}
+
+.container-container-main-calculadora-bloco {
+  width: 30%;
+  height: 50%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-main-calculadora-paragrafo {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.container-main-calculadora-paragrafo p {
+  font-family: "Helvetica Now Display DW", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #0f141e;
+  font-size: 0.9rem;
+  padding-top: 1px;
+  padding-bottom: 4px;
+  text-align: center;
+  text-align: justify;
+  margin-bottom: 5%;
+}
+
+.container-main-calculadora-principal-saidas {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5%;
 }

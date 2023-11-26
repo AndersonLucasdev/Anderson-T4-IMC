@@ -1,15 +1,32 @@
 const CalcularImc = () => {
-  const peso = parseFloat(document.getElementById("peso").value);
-  const altura = parseFloat(
-    document.getElementById("altura").value.replace(",", ".")
-  );
-  const idade = document.querySelector('input[name="idade"]:checked').value;
-  const genero = document.querySelector('input[name="genero"]:checked').value;
+  const pesoElement = document.getElementById("peso");
+  const alturaElement = document.getElementById("altura");
+  const idadeElement = document.querySelector('input[name="idade"]:checked');
+  const generoElement = document.querySelector('input[name="genero"]:checked');
+
+  if (!pesoElement || !alturaElement || !idadeElement || !generoElement) {
+    alert("Alguns elementos não foram encontrados!");
+    return;
+  }
+
+  const peso = parseFloat(pesoElement.value);
+  const altura = parseFloat(alturaElement.value.replace(",", "."));
+  const idade = idadeElement.value;
+  const genero = generoElement.value;
   const imc = peso / (altura * altura);
 
-  let percentualGordura = 0;
+  if (!idade || isNaN(altura) || isNaN(peso) || !genero) {
+    alert("Há campos vazios!");
+  } else {
+    const { figura, mensagem } = RecomandacoesImc(idade, genero, imc);
 
-  figura, (imagem = RecomandacoesImc(idade, genero, imc));
+    const saidasDiv = document.querySelector('.container-main-calculadora-principal-saidas');
+    saidasDiv.innerHTML = `
+      <img src="../IMG/${figura}" alt="Figura">
+      <h3>Recomendações: </h3>
+      <p>Mensagem: ${mensagem}</p>
+    `;
+  }
 };
 
 const RecomandacoesImc = (idade, genero, imc) => {
@@ -17,7 +34,7 @@ const RecomandacoesImc = (idade, genero, imc) => {
   let mensagem = "";
 
   if (idade >= 1 && idade < 10) {
-    if (genero === "homem") {
+    if (genero === "masculino") {
       if (imc < 16.1) {
         figura = "abaixo_do_peso_crianca.webp";
         mensagem = "Underweight for boys children";
@@ -31,8 +48,7 @@ const RecomandacoesImc = (idade, genero, imc) => {
         figura = "obesidade_crianca.webp";
         mensagem = "Obese for boys children";
       }
-
-    } else if (genero === "mulher") {
+    } else if (genero === "feminino") {
       if (imc < 16.3) {
         figura = "abaixo_do_peso_crianca.webp";
         mensagem = "Underweight for girls children";
@@ -47,9 +63,8 @@ const RecomandacoesImc = (idade, genero, imc) => {
         mensagem = "Obese for girls children";
       }
     }
-  } 
-  else if (idade >= 10 && idade < 15) {
-    if (genero == "homem") {
+  } else if (idade >= 10 && idade < 15) {
+    if (genero == "masculino") {
       if (imc < 18.5) {
         figura = "abaixo_do_peso_crianca.webp";
         mensagem = "Underweight for boys children";
@@ -63,7 +78,7 @@ const RecomandacoesImc = (idade, genero, imc) => {
         figura = "obesidade_crianca.webp";
         mensagem = "Obese for boys children";
       }
-    } else if (genero == "mulheres") {
+    } else if (genero == "feminino") {
       if (imc < 18.9) {
         figura = "abaixo_do_peso_crianca.webp";
         mensagem = "Underweight for girls children";
@@ -78,10 +93,8 @@ const RecomandacoesImc = (idade, genero, imc) => {
         mensagem = "Obese for girls children";
       }
     }
-
-  } 
-  else if (idade >= 15 && adulto < 65) {
-    if (genero === "homem") {
+  } else if (idade >= 15 && adulto < 65) {
+    if (genero === "masculino") {
       if (imc < 18.5) {
         figura = "abaixo_do_peso_masculino.webp";
         mensagem = "Underweight for men adults";
@@ -101,7 +114,7 @@ const RecomandacoesImc = (idade, genero, imc) => {
         figura = "obesidade_grau_III_masculina.webp";
         mensagem = "Obesity Grade III for men adults";
       }
-    } else if (genero === "mulher") {
+    } else if (genero === "feminino") {
       if (imc < 18.5) {
         figura = "abaixo_do_peso_feminino.webp";
         mensagem = "Underweight for women adults";
@@ -123,7 +136,7 @@ const RecomandacoesImc = (idade, genero, imc) => {
       }
     }
   } else {
-    if (genero === "homem") {
+    if (genero === "masculino") {
       if (imc < 22) {
         figura = "abaixo_do_peso_masculino.webp";
         mensagem = "Underweight for elderly men";
@@ -134,10 +147,10 @@ const RecomandacoesImc = (idade, genero, imc) => {
         figura = "sobrepeso_masculino.webp";
         mensagem = "Overweight for elderly men";
       } else {
-        figura = "obesidade_masculina.webp";
+        figura = "obesidade_grau_I_masculino.webp";
         mensagem = "Obesity for elderly men";
       }
-    } else if (genero === "mulher") {
+    } else if (genero === "feminino") {
       if (imc < 22) {
         figura = "abaixo_do_peso_feminino.webp";
         mensagem = "Underweight for elderly women";
@@ -148,25 +161,25 @@ const RecomandacoesImc = (idade, genero, imc) => {
         figura = "sobrepeso_feminino.webp";
         mensagem = "Overweight for elderly women";
       } else {
-        figura = "obesidade_feminina.webp";
+        figura = "obesidade_grau_I_feminina.webp";
         mensagem = "Obesity for elderly women";
       }
     }
   }
-  return figura, mensagem;
+  return { figura, mensagem };
 };
 
 const formatarInputAltura = (input) => {
-    let valor = input.value.replace(/[^\d,]/g, '')
+  let valor = input.value.replace(/[^\d,]/g, "");
 
-    if (valor.includes(',')) {
-        valor = valor.substring(0, 1) + valor.substring(1).replace(',', '');
-        valor = valor.substring(0, 1) + ',' + valor.substring(1);
-    } else {
-        if (valor.length > 1) {
-            valor = valor.substring(0, 1) + ',' + valor.substring(1);
-        }
+  if (valor.includes(",")) {
+    valor = valor.substring(0, 1) + valor.substring(1).replace(",", "");
+    valor = valor.substring(0, 1) + "," + valor.substring(1);
+  } else {
+    if (valor.length > 1) {
+      valor = valor.substring(0, 1) + "," + valor.substring(1);
     }
+  }
 
-    input.value = valor;
+  input.value = valor;
 };
