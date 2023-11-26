@@ -247,8 +247,8 @@
 }
 
 .container-main-calculadora-espacamento {
-  width: 90%;
-  height: 80%;
+  width: 95%;
+  height: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -261,6 +261,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .container-main-calculadora-principal-espacamento {
   width: 90%;
   height: 95%;
@@ -268,49 +269,61 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* background-color: #d7dae0; */
-  background-color: #91f0f0;
+  background-color: #bac9c9;
+  border-radius: 2%;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .container-main-calculadora-principal-espacamento-idade {
   height: 15%;
-  width: 100%;
+  width: 95%;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   flex-direction: column;
 }
 
 .container-main-calculadora-principal-espacamento-idade-selecione {
-  width: 40%;
+  width: 20%;
   height: 40%;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
 }
 
 .container-main-calculadora-principal-espacamento-idade-escolha {
-  width: 60%;
+  width: 80%;
   height: 60%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
+.container-main-calculadora-principal-espacamento-idade-escolha input {
+  height: 35%;
+  width: 5%;
+  border-radius: 20%;
+}
+
+.container-main-calculadora-principal-espacamento-idade-escolha p {
+  text-align: center;
+}
+
+
 .container-main-calculadora-principal-espacamento-sexo {
   height: 15%;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   flex-direction: column;
 }
 
 .container-main-calculadora-principal-espacamento-sexo-selecione {
-  width: 40%;
+  width: 25%;
   height: 40%;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
 }
 
@@ -322,17 +335,27 @@
   justify-content: space-evenly;
 }
 
+.container-main-calculadora-principal-espacamento-sexo-escolha input {
+  height: 35%;
+  width: 5%;
+  border-radius: 20%;
+}
+
+.container-main-calculadora-principal-espacamento-sexo-escolha p {
+  text-align: center;
+}
+
 .container-main-calculadora-principal-espacamento-peso {
   height: 20%;
-  width: 50%;
+  width: 90%;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   flex-direction: column;
 }
 
 .container-main-calculadora-principal-espacamento-peso input {
-  width: 80%;
+  width: 40%;
   height: 25%;
   border: none;
   border-radius: 15px;
@@ -346,20 +369,24 @@
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+}
+
+.container-main-calculadora-principal-espacamento-peso-escolha p {
+  text-align: center;
 }
 
 .container-main-calculadora-principal-espacamento-altura {
   height: 20%;
-  width: 50%;
+  width: 90%;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   flex-direction: column;
 }
 
 .container-main-calculadora-principal-espacamento-altura input {
-  width: 80%;
+  width: 40%;
   height: 25%;
   border: none;
   border-radius: 15px;
@@ -373,14 +400,18 @@
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+}
+
+.container-main-calculadora-principal-espacamento-altura-escolha p {
+  text-align: center;
 }
 
 .container-main-calculadora-principal-espacamento-btn {
   height: 10%;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
 }
 
@@ -388,8 +419,8 @@
   width: 25%;
   height: 70%;
   border: none;
-  background-color: rgb(177, 172, 172);
-  color: rgb(18, 207, 18);
+  background-color: rgb(18, 207, 18);
+  color: rgb(255, 255, 255);
   border-radius: 20px;
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
   font-size: 1.1rem;
@@ -404,7 +435,7 @@
 
 .container-container-main-calculadora-bloco {
   width: 30%;
-  height: 50%;
+  height: 75%;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -413,7 +444,7 @@
 
 .container-main-calculadora-paragrafo {
   width: 100%;
-  height: 50%;
+  height: 30%;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -433,11 +464,16 @@
 }
 
 .container-main-calculadora-principal-saidas {
-  height: 50%;
+  height: 70%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-top: 5%;
+}
+
+.container-main-calculadora-principal-saidas img {
+  height: 100%;
+  width: 40%;
 }

@@ -23,8 +23,8 @@ const CalcularImc = () => {
     const saidasDiv = document.querySelector('.container-main-calculadora-principal-saidas');
     saidasDiv.innerHTML = `
       <img src="../IMG/${figura}" alt="Figura">
-      <h3>Recomendações: </h3>
-      <p>Mensagem: ${mensagem}</p>
+      <h3>Recommendations: </h3>
+      <p>${mensagem}</p>
     `;
   }
 };
