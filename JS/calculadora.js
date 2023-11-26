@@ -33,7 +33,7 @@ const RecomandacoesImc = (idade, genero, imc) => {
   let figura = "";
   let mensagem = "";
 
-  if (idade >= 1 && idade < 10) {
+  if (idade === "crianca") {
     if (genero === "masculino") {
       if (imc < 16.1) {
         figura = "abaixo_do_peso_crianca.webp";
@@ -48,7 +48,9 @@ const RecomandacoesImc = (idade, genero, imc) => {
         figura = "obesidade_crianca.webp";
         mensagem = "Obese for boys children";
       }
-    } else if (genero === "feminino") {
+    } 
+    else if (genero === "feminino") {
+      console.log("entrou")
       if (imc < 16.3) {
         figura = "abaixo_do_peso_crianca.webp";
         mensagem = "Underweight for girls children";
@@ -63,7 +65,8 @@ const RecomandacoesImc = (idade, genero, imc) => {
         mensagem = "Obese for girls children";
       }
     }
-  } else if (idade >= 10 && idade < 15) {
+  } 
+  else if (idade === "adolescente") {
     if (genero == "masculino") {
       if (imc < 18.5) {
         figura = "abaixo_do_peso_crianca.webp";
@@ -78,7 +81,8 @@ const RecomandacoesImc = (idade, genero, imc) => {
         figura = "obesidade_crianca.webp";
         mensagem = "Obese for boys children";
       }
-    } else if (genero == "feminino") {
+    } 
+    else if (genero == "feminino") {
       if (imc < 18.9) {
         figura = "abaixo_do_peso_crianca.webp";
         mensagem = "Underweight for girls children";
@@ -93,7 +97,8 @@ const RecomandacoesImc = (idade, genero, imc) => {
         mensagem = "Obese for girls children";
       }
     }
-  } else if (idade >= 15 && adulto < 65) {
+  } 
+  else if (idade === "adulto") {
     if (genero === "masculino") {
       if (imc < 18.5) {
         figura = "abaixo_do_peso_masculino.webp";
