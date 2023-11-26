@@ -20,31 +20,31 @@ const RecomandacoesImc = (idade, genero, imc) => {
     if (genero === "homem") {
       if (imc < 16.1) {
         figura = "abaixo_do_peso_crianca.webp";
-        mensagem = "Abaixo do peso para homens crianças";
+        mensagem = "Underweight for boys children";
       } else if (imc >= 16.1 && imc < 18.8) {
         figura = "peso_normal_crianca.webp";
-        mensagem = "Peso ideal para homens crianças";
+        mensagem = "Normal weight for boys children";
       } else if (imc >= 18.8 && imc < 21.4) {
         figura = "sobrepeso_crianca.webp";
-        mensagem = "Sobrepeso para homens crianças";
+        mensagem = "Overweight for boys children";
       } else {
         figura = "obesidade_crianca.webp";
-        mensagem = "Sobrepeso para homens crianças";
+        mensagem = "Obese for boys children";
       }
 
     } else if (genero === "mulher") {
       if (imc < 16.3) {
         figura = "abaixo_do_peso_crianca.webp";
-        mensagem = "Abaixo do peso para mulheres crianças";
+        mensagem = "Underweight for girls children";
       } else if (imc >= 16.3 && imc < 19.1) {
         figura = "peso_normal_crianca.webp";
-        mensagem = "Peso ideal para mulheres crianças";
+        mensagem = "Normal weight for girls children";
       } else if (imc >= 19.2 && imc < 21.7) {
         figura = "sobrepeso_crianca.webp";
-        mensagem = "Sobrepeso para mulheres crianças";
+        mensagem = "Overweight for girls children";
       } else {
         figura = "obesidade_crianca.webp";
-        mensagem = "Sobrepeso para mulheres crianças";
+        mensagem = "Obese for girls children";
       }
     }
   } 
@@ -52,30 +52,30 @@ const RecomandacoesImc = (idade, genero, imc) => {
     if (genero == "homem") {
       if (imc < 18.5) {
         figura = "abaixo_do_peso_crianca.webp";
-        mensagem = "Abaixo do peso para homens crianças";
+        mensagem = "Underweight for boys children";
       } else if (imc >= 18.5 && imc < 21.9) {
         figura = "peso_normal_crianca.webp";
-        mensagem = "Peso ideal para homens crianças";
+        mensagem = "Normal weight for boys children";
       } else if (imc >= 21.9 && imc < 25.9) {
         figura = "sobrepeso_crianca.webp";
-        mensagem = "Sobrepeso para homens crianças";
+        mensagem = "Overweight for boys children";
       } else {
         figura = "obesidade_crianca.webp";
-        mensagem = "Sobrepeso para homens crianças";
+        mensagem = "Obese for boys children";
       }
     } else if (genero == "mulheres") {
       if (imc < 18.9) {
         figura = "abaixo_do_peso_crianca.webp";
-        mensagem = "Abaixo do peso para mulheres crianças";
+        mensagem = "Underweight for girls children";
       } else if (imc >= 18.9 && imc < 23) {
         figura = "peso_normal_crianca.webp";
-        mensagem = "Peso ideal para mulheres crianças";
+        mensagem = "Normal weight for girls children";
       } else if (imc >= 23 && imc < 27.7) {
         figura = "sobrepeso_crianca.webp";
-        mensagem = "Sobrepeso para mulheres crianças";
+        mensagem = "Overweight for girls children";
       } else {
         figura = "obesidade_crianca.webp";
-        mensagem = "Sobrepeso para mulheres crianças";
+        mensagem = "Obese for girls children";
       }
     }
 
@@ -84,72 +84,72 @@ const RecomandacoesImc = (idade, genero, imc) => {
     if (genero === "homem") {
       if (imc < 18.5) {
         figura = "abaixo_do_peso_masculino.webp";
-        mensagem = "Abaixo do peso para homens adultos";
+        mensagem = "Underweight for men adults";
       } else if (imc >= 18.5 && imc < 24.9) {
         figura = "peso_normal_masculino.webp";
-        mensagem = "Peso normal para homens adultos";
+        mensagem = "Normal weight for men adults";
       } else if (imc >= 24.9 && imc < 29.9) {
         figura = "sobrepeso_masculino.webp";
-        mensagem = "Sobrepeso para homens adultos";
+        mensagem = "Overweight for men adults";
       } else if (imc >= 29.9 && imc < 34.9) {
         figura = "obesidade_grau_I_masculina.webp";
-        mensagem = "Obesidade Grau I para homens adultos";
+        mensagem = "Obesity Grade I for men adults";
       } else if (imc >= 34.9 && imc < 39.9) {
         figura = "obesidade_grau_II_masculina.webp";
-        mensagem = "Obesidade Grau II para homens adultos";
+        mensagem = "Obesity Grade II for men adults";
       } else {
         figura = "obesidade_grau_III_masculina.webp";
-        mensagem = "Obesidade Grau III para homens adultos";
+        mensagem = "Obesity Grade III for men adults";
       }
     } else if (genero === "mulher") {
       if (imc < 18.5) {
         figura = "abaixo_do_peso_feminino.webp";
-        mensagem = "Abaixo do peso para mulheres adultas";
+        mensagem = "Underweight for women adults";
       } else if (imc >= 18.5 && imc < 24.9) {
         figura = "peso_normal_feminino.webp";
-        mensagem = "Peso normal para mulheres adultas";
+        mensagem = "Normal weight for women adults";
       } else if (imc >= 24.9 && imc < 29.9) {
         figura = "sobrepeso_feminino.webp";
-        mensagem = "Sobrepeso para mulheres adultas";
+        mensagem = "Overweight for women adults";
       } else if (imc >= 29.9 && imc < 34.9) {
         figura = "obesidade_grau_I_feminina.webp";
-        mensagem = "Obesidade Grau I para mulheres adultas";
+        mensagem = "Obesity Grade I for women adults";
       } else if (imc >= 34.9 && imc < 39.9) {
         figura = "obesidade_grau_II_feminina.webp";
-        mensagem = "Obesidade Grau II para mulheres adultas";
+        mensagem = "Obesity Grade II for women adults";
       } else {
         figura = "obesidade_grau_III_feminina.webp";
-        mensagem = "Obesidade Grau III para mulheres adultas";
+        mensagem = "Obesity Grade III for women adults";
       }
     }
   } else {
     if (genero === "homem") {
       if (imc < 22) {
         figura = "abaixo_do_peso_masculino.webp";
-        mensagem = "Abaixo do peso para homens idosos";
+        mensagem = "Underweight for elderly men";
       } else if (imc >= 22 && imc < 27) {
         figura = "peso_normal_masculino.webp";
-        mensagem = "Peso normal para homens idosos";
+        mensagem = "Normal weight for elderly men";
       } else if (imc >= 27 && imc < 30) {
         figura = "sobrepeso_masculino.webp";
-        mensagem = "Sobrepeso para homens idosos";
+        mensagem = "Overweight for elderly men";
       } else {
         figura = "obesidade_masculina.webp";
-        mensagem = "Obesidade para homens idosos";
+        mensagem = "Obesity for elderly men";
       }
     } else if (genero === "mulher") {
       if (imc < 22) {
         figura = "abaixo_do_peso_feminino.webp";
-        mensagem = "Abaixo do peso para mulheres idosas";
+        mensagem = "Underweight for elderly women";
       } else if (imc >= 22 && imc < 27) {
         figura = "peso_normal_feminino.webp";
-        mensagem = "Peso normal para mulheres idosas";
+        mensagem = "Normal weight for elderly women";
       } else if (imc >= 27 && imc < 30) {
         figura = "sobrepeso_feminino.webp";
-        mensagem = "Sobrepeso para mulheres idosas";
+        mensagem = "Overweight for elderly women";
       } else {
         figura = "obesidade_feminina.webp";
-        mensagem = "Obesidade para mulheres idosas";
+        mensagem = "Obesity for elderly women";
       }
     }
   }

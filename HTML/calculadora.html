@@ -24,11 +24,11 @@
     <main class="container-main">
         <section class="container-main-conteudo">
             <div class="container-main-conteudo-titulo">
-                <h1>What is IMC?</h1>
+                <h1>Understanding Body Mass Index (BMI)</h1>
             </div>
             <div class="container-main-conteudo-bloco">
                 <div class="container-main-conteudo-bloco-texto">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>BMI is much more than a number. It is a guide that provides insights into how your weight relates to your height, opening the door to a holistic understanding of health. This measure not only categorizes, but serves as a starting point for wellness strategies and positive lifestyle changes. By unlocking your BMI, you'll gain an initial understanding of your physical health, allowing you to take informed steps toward a more balanced life. Explore this valuable tool and discover the nuances of your body composition for a more conscious journey toward wellness.</p>
                 </div>
                 <div class="container-main-conteudo-bloco-imagem">
                     <img src="../IMG/tabela-imc.png" alt="">
@@ -39,7 +39,7 @@
                     <img src="../IMG/formula-IMC.png" alt="">
                 </div>
                 <div class="container-main-conteudo-formula-descricao">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                    <p>BMI is calculated by dividing weight (in kilograms) by height squared (in meters). The formula is expressed as:</p>
                 </div>
             </div>
         </section>
@@ -47,49 +47,61 @@
             <div class="container-main-calculadora-titulo">
                 <h1>Calculate</h1>
             </div>
-            <div class="container-main-calculadora-principal">
-                <div class="container-main-calculadora-principal-espacamento">
-                    <div class="container-main-calculadora-principal-espacamento-idade">
-                        <div class="container-main-calculadora-principal-espacamento-idade-selecione">
-                            <p>Selecione</p>
+            <div class="container-main-calculadora-espacamento">
+                <div class="container-main-calculadora-principal">
+                    <div class="container-main-calculadora-principal-espacamento">
+                        <div class="container-main-calculadora-principal-espacamento-idade">
+                            <div class="container-main-calculadora-principal-espacamento-idade-selecione">
+                                <p>Selecione</p>
+                            </div>
+                            <div class="container-main-calculadora-principal-espacamento-idade-escolha">
+                                <input type="radio" name="idade" value="crianca">
+                                <p>Criança</p>
+                                <input type="radio" name="idade" value="adulto">
+                                <p>Adulto</p>
+                                <input type="radio" name="idade" value="idoso">
+                                <p>Idoso</p>
+                            </div>
                         </div>
-                        <div class="container-main-calculadora-principal-espacamento-idade-escolha">
-                            <input type="radio" name="idade" value="crianca">
-                            <p>Criança</p>
-                            <input type="radio" name="idade" value="adulto">
-                            <p>Adulto</p>
-                            <input type="radio" name="idade" value="idoso">
-                            <p>Idoso</p>
+                        <div class="container-main-calculadora-principal-espacamento-sexo">
+                            <div class="container-main-calculadora-principal-espacamento-sexo-selecione">
+                                <p>Selecione</p>
+                            </div>
+                            <div class="container-main-calculadora-principal-espacamento-sexo-escolha">
+                                <input type="radio" name="genero" value="masculino">
+                                <p>Masculino</p>
+                                <input type="radio" name="genero" value="feminino">
+                                <p>Feminino</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="container-main-calculadora-principal-espacamento-sexo">
-                        <div class="container-main-calculadora-principal-espacamento-sexo-selecione">
-                            <p>Selecione</p>
+                        <div class="container-main-calculadora-principal-espacamento-peso">
+                            <div class="container-main-calculadora-principal-espacamento-peso-escolha">
+                                <p>Peso(Kg)</p>
+                            </div>
+                            <input type="text" id="peso" maxlength="4">
                         </div>
-                        <div class="container-main-calculadora-principal-espacamento-sexo-escolha">
-                            <input type="radio" name="genero" value="masculino">
-                            <p>Masculino</p>
-                            <input type="radio" name="genero" value="feminino">
-                            <p>Feminino</p>
+                        <div class="container-main-calculadora-principal-espacamento-altura">
+                            <div class="container-main-calculadora-principal-espacamento-altura-escolha">
+                                <p>Altura(metro)</p>
+                            </div>
+                            <input type="text" id="altura" maxlength="4" oninput="formatarInputAltura(this)">
                         </div>
-                    </div>
-                    <div class="container-main-calculadora-principal-espacamento-peso">
-                        <div class="container-main-calculadora-principal-espacamento-peso-escolha">
-                            <p>Peso(Kg)</p>
+                        <div class="container-main-calculadora-principal-espacamento-btn">
+                            <button onclick="CalcularImc()">Calcular</button>
                         </div>
-                        <input type="text" id="peso" maxlength="4">
-                    </div>
-                    <div class="container-main-calculadora-principal-espacamento-altura">
-                        <div class="container-main-calculadora-principal-espacamento-altura-escolha">
-                            <p>Altura(metro)</p>
-                        </div>
-                        <input type="text" id="altura" maxlength="4" oninput="formatarInputAltura(this)">
                     </div>
                 </div>
-            </div>
-            <div class="container-main-calculadora-principal-saidas">
+                <div class="container-container-main-calculadora-bloco">
+                    <div class="container-main-calculadora-paragrafo">
+                        <p>Use the calculator below to enter your weight and height to find out your BMI. This number provides a general assessment of your nutritional status, helping you identify whether you are underweight, ideal weight, overweight or obese.</p>
+                    </div>
+                    <div class="container-main-calculadora-principal-saidas">
 
+                    </div>
+                </div>
+                
             </div>
+            
         </section>
     </main>
 </body>
